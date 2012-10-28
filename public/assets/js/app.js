@@ -5,8 +5,7 @@
  * Distributed under terms of the MIT license.
  */
 
-(function($) {
-    
+(function ($) {
     $(document).bind("mobileinit", function() {
         $.mobile.allowCrossDomainPages = true;
         $.mobile.defaultPageTransition = "slide";

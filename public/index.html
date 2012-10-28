@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 	<head> 
 		<title>GRE Mania!</title> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
@@ -8,18 +8,31 @@
         <script src="assets/js/libs/jquery-1.8.2.min.js"></script>
         <script src="assets/js/app.js"></script>
 	    <script src="assets/js/libs/jquery.mobile-1.2.0.min.js"></script>
-	</head> 
+        <script src="assets/js/libs/ICanHaz.min.js"></script>
+
+        <script id="sheet" type="text/html">
+            <div id="word">{{ word }}</div>
+            <div id="defCN">{{ def_cn }}</div>
+            <div id="defEN" class="light">{{ def_en }}</div>
+        </script>
+
+        <script id="actions" type="text/html">
+            <div id="positive">positive</div>
+            <div id="negative">negative</div>
+        </script>
+
+	</head>
 <body>
     
     <div id="home" data-role="page" >
 
 		<div data-role="header" data-position="fixed">
-			<h1>GRE Mania!</h1>
+            <h1>GRE Mania!</h1>
+            <div id="line">Don't Panic</div>
 		</div>
 
-		<div data-role="content">	
-            <h1>Don't Panic</h1>
-            <ul data-role="listview">
+		<div data-role="content">
+            <ul id="menu">
                 <li><a href="#go">Go! S, Go!</a></li>
                 <li><a href="#search">Search</a></li>
                 <li><a href="#help">Help</a></li>
@@ -28,24 +41,30 @@
 
 	</div><!-- /page -->
     
-    <div id="go" data-role="page" >
+    <div id="go" data-role="page" data-transition="flip">
 
 		<div data-role="header" data-position="fixed">
-			<h1>GREMania!</h1>
+            <h1>GRE Mania!</h1>
 		</div>
 
-		<div data-role="content">	
+		<div data-role="content">
+            <div id="mainbar"></div>
+            <div id="footer">
+                <a href="#home">home</a>
+                <a class="help" href="">help</a>
+            </div>
         </div><!-- /content -->
 
     </div><!-- /page -->
         
-    <div id="search" data-role="page" >
+    <div id="search" data-role="dialog" data-transition="slidedown">
 
 		<div data-role="header" data-position="fixed">
+            <h1>Search</h1>
 		</div>
 
-		<div data-role="content">	
-            <h1>Don't Panic</h1>
+		<div data-role="content">
+            <div class="mainbar"></div>
         </div><!-- /content -->
 
     </div><!-- /page -->
