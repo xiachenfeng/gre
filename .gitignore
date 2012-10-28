@@ -1,0 +1,18 @@
+# WebStorm meta files
+.idea
+
+# Vim swaps
+*.swp
+
+# 3rd party libs
+public/assets/css/jquery.mobile-1.2.0.min.css
+public/assets/js/libs/*
+public/assets/css/images/ajax-loader.gif
+public/assets/css/images/icons-18-black.png
+public/assets/css/images/icons-18-white.png
+public/assets/css/images/icons-36-black.png
+public/assets/css/images/icons-36-white.png
+
+
+
+
