@@ -18,8 +18,9 @@ def parse(csv_file, word_loc, def_loc, delimiter='\t'):
     with open(csv_file) as f:
         reader = creader(f, delimiter=delimiter)
         for row in reader:
-            words.append({row[word_loc]: row[def_loc]})
-    return words
+            words.append((row[word_loc], row[def_loc]))
+    print "# of words: %d" % len(words)
+    return {'words': words}
 
 
 def to_json(data, out_file):
