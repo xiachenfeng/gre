@@ -1,0 +1,16 @@
+$color: #333;
+$action_icon_color: #555;
+$action_icon_size: 20px;
+$help_color: #777;
+$text_shadow: 1px 1px 1px #aaa;
+$no_shadow: 0 0 0 white;
+$screen_width: 640px;
+$footer_bg_color: #444;
+$footer_action: #777;
+$footer_action_enabled: white;
+$footer_help_color: #ddd;
+
+@import "compass/layout/sticky-footer";
+@import "compass/utilities";
+@import "compass/css3";
+@import "compass/typography/links/unstyled-link";

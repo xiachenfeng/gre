@@ -1,0 +1,153 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 12, ../../../compass/sass/screen.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+a:active, a:focus {
+  outline: none;
+}
+
+/* line 20, ../../../compass/sass/screen.scss */
+body {
+  color: #333333;
+}
+
+/* line 24, ../../../compass/sass/screen.scss */
+h1 {
+  font-size: 1.5em;
+}
+
+/* line 28, ../../../compass/sass/screen.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 35, ../../../compass/sass/screen.scss */
+.ui-content {
+  padding: 0;
+}
+
+/* line 39, ../../../compass/sass/screen.scss */
+.header {
+  text-align: center;
+  margin: 10px;
+}
+/* line 42, ../../../compass/sass/screen.scss */
+.header > h1 {
+  text-shadow: 1px 1px 1px #aaaaaa;
+}
+
+/* line 46, ../../../compass/sass/screen.scss */
+.main {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 51, ../../../compass/sass/screen.scss */
+.footer {
+  padding: 5px;
+  background-color: #444444;
+}
+/* line 54, ../../../compass/sass/screen.scss */
+.footer .action {
+  text-shadow: 0 0 0 white;
+  color: #777777;
+}
+/* line 57, ../../../compass/sass/screen.scss */
+.footer .action .help {
+  color: #dddddd;
+}
+/* line 60, ../../../compass/sass/screen.scss */
+.footer .action.enabled {
+  color: white;
+}
+
+/* line 72, ../../../compass/sass/screen.scss */
+.help {
+  font-size: 70%;
+}
+
+/* line 80, ../../../compass/sass/screen.scss */
+#home {
+  text-align: center;
+}
+/* line 82, ../../../compass/sass/screen.scss */
+#home .header > #line {
+  text-align: right;
+}
+/* line 85, ../../../compass/sass/screen.scss */
+#home #menu {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+}
+/* line 90, ../../../compass/sass/screen.scss */
+#home #options {
+  font-size: 130%;
+  font-variant: small-caps;
+  font-style: italic;
+  text-shadow: 1px 1px 1px #aaaaaa;
+}
+/* line 91, ../../../compass/sass/screen.scss */
+#home #options li {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #333333;
+}
+/* line 92, ../../../compass/sass/screen.scss */
+#home #options li div[data-icon] {
+  font-size: 80%;
+  float: left;
+}
+/* line 96, ../../../compass/sass/screen.scss */
+#home #options li a {
+  padding-bottom: 0.3em;
+}
+
+/* line 113, ../../../compass/sass/screen.scss */
+#go #word-card {
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  min-height: 200px;
+  text-align: center;
+  margin: 20px 15px 10px 15px;
+  padding: 10px;
+}
+/* line 121, ../../../compass/sass/screen.scss */
+#go .actions {
+  width: 100%;
+}
+/* line 123, ../../../compass/sass/screen.scss */
+#go .actions div[data-icon] {
+  font-size: 180%;
+}
+
+/* line 130, ../../../compass/sass/screen.scss */
+.action {
+  color: #555555;
+  text-shadow: 1px 1px 1px #aaaaaa;
+  text-align: center;
+}
+/* line 133, ../../../compass/sass/screen.scss */
+.action div[data-icon] {
+  font-size: 20px;
+}
+
+/* line 141, ../../../compass/sass/screen.scss */
+.hidden {
+  display: none;
+}

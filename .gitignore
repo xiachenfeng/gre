@@ -4,6 +4,9 @@
 # Vim swaps
 *.swp
 
+# pyc
+.*pyc
+
 # 3rd party libs
 public/assets/css/jquery.mobile-1.2.0.min.css
 public/assets/js/libs/*

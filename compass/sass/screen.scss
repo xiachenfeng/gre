@@ -1,0 +1,143 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "base";
+
+
+
+// defaults
+
+a {
+  @include unstyled-link;
+  //&:visited, &:hover {
+  //  color: inherit !important;
+  //  outline: none;
+  //}
+}
+
+body {
+  color: $color;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+ul, ol {
+  margin: 0; padding: 0;
+  list-style: none;
+}
+
+
+// jquery mobile style overrides
+.ui-content {
+  padding: 0;
+}
+//page structure
+.header {
+  text-align: center;
+  margin: 10px;
+  &>h1 {
+    @include text-shadow(#{$text_shadow});
+  }
+}
+.main {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.footer {
+  padding: 5px;
+  background-color: $footer_bg_color;
+  .action{
+    @include text-shadow(#{$no_shadow});
+    color: $footer_action;
+    .help {
+      color: $footer_help_color;
+    }
+    &.enabled {
+      color: $footer_action_enabled;
+    }
+  }
+
+}
+
+
+.light {
+
+}
+
+.help {
+  font-size: 70%;
+  //margin:
+  //color: $help_color;
+  //@include text_shadow(#{$text_shadow});
+}
+//@include sticky-footer(50px, "#go-main", "#go-main-footer", "#go-footer");
+
+#home {
+  text-align: center;
+  .header>#line {
+    text-align: right;
+  }
+  #menu {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+  }
+  #options {
+    li {
+      div[data-icon] {
+        font-size: 80%;
+        float: left;
+      }
+      a {
+        padding-bottom: 0.3em;
+
+      }
+      margin-bottom: 0.5em;
+      border-bottom: 1px solid $color;
+    }
+    //width: 200px;
+    font-size: 130%;
+    font-variant: small-caps;
+    font-style: italic;
+    @include text_shadow(#{$text_shadow});
+  }
+
+}
+
+#go {
+  #word-card {
+    @include single-box-shadow;
+    @include border-radius(10px);
+    min-height: 200px;
+    text-align: center;
+    margin: 20px 15px 10px 15px;
+    padding: 10px;
+  }
+  .actions {
+    width: 100%;
+    div[data-icon] {
+      font-size: 180%;
+    }
+  }
+
+}
+
+.action {
+  color: $action_icon_color;
+  @include text_shadow(#{$text_shadow});
+  div[data-icon] {
+    font-size: $action_icon_size;
+  }
+  text-align: center;
+}
+
+
+
+.hidden {
+  display: none;
+}
